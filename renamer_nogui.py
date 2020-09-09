@@ -60,9 +60,9 @@ class Renamer():
         return os.path.basename(os.path.normpath(folderName))
 
     def confirmRename(self, rootFolder):
-        confirm = input("Are you sure you want to rename all files in " + rootFolder + "?" + '\n' + "Type yes to continue:")
+        confirm = input("Are you sure you want to rename all files in " + rootFolder + "?" + '\n' + "y/n:")
 
-        if confirm.lower() != 'yes':
+        if confirm.lower() != 'y':
             print("Exiting - response: " + confirm)
             exit()
         else:
